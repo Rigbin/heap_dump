@@ -4,7 +4,7 @@ dump heap memory of running process
 Use [`gdb`](https://www.gnu.org/software/gdb/) to dump the *heap* memory of running process.  
 Run as **root**!
 
-```console
+```bash
 #!/bin/bash
 $PROG=${1:vim}   # vim as default
 for PID in `ps -C $PROG -o pid= | tr -d ' '`
